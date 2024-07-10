@@ -42,7 +42,18 @@ const Services = () => {
             }
           >
             <div className="services_modal-content">
-              <i className="uil uil-times services_modal-close"></i>
+              <i
+                onClick={() => toggleTab(0)}
+                onKeyPress={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    toggleTab(0);
+                  }
+                }}
+                tabIndex="0"
+                role="button"
+                className="uil uil-times services_modal-close"
+              ></i>
+
               <h3 className="services_modal-title">Product Designer</h3>
               <p className="services_modal-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
@@ -94,13 +105,39 @@ const Services = () => {
               Ui/Ux <br /> Designer
             </h3>
           </div>
-          <span className="services_button">
+          <span
+            className="services_button"
+            role="button"
+            tabIndex="0"
+            onClick={() => toggleTab(2)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                toggleTab(1);
+              }
+            }}
+          >
             View More
             <i className="uil uil-arrow-right services_button-icon"></i>
           </span>
-          <div className="services_modal">
+          <div
+            className={
+              toggleState === 2
+                ? "services_modal active-modal"
+                : "services_modal"
+            }
+          >
             <div className="services_modal-content">
-              <i className="uil uil-times services_modal-close"></i>
+              <i
+                onClick={() => toggleTab(0)}
+                onKeyPress={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    toggleTab(0);
+                  }
+                }}
+                tabIndex="0"
+                role="button"
+                className="uil uil-times services_modal-close"
+              ></i>
               <h3 className="services_modal-title">UI/UX Designer</h3>
               <p className="services_modal-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
@@ -153,13 +190,39 @@ const Services = () => {
               Visual <br /> Designer
             </h3>
           </div>
-          <span className="services_button">
+          <span
+            role="button"
+            tabIndex="0"
+            onClick={() => toggleTab(3)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                toggleTab(1);
+              }
+            }}
+            className="services_button"
+          >
             View More
             <i className="uil uil-arrow-right services_button-icon"></i>
           </span>
-          <div className="services_modal">
+          <div
+            className={
+              toggleState === 3
+                ? "services_modal active-modal"
+                : "services_modal"
+            }
+          >
             <div className="services_modal-content">
-              <i className="uil uil-times services_modal-close"></i>
+              <i
+                onClick={() => toggleTab(0)}
+                onKeyPress={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    toggleTab(0);
+                  }
+                }}
+                tabIndex="0"
+                role="button"
+                className="uil uil-times services_modal-close"
+              ></i>
               <h3 className="services_modal-title">Visual Designer</h3>
               <p className="services_modal-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
