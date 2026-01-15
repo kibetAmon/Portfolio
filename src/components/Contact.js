@@ -90,16 +90,16 @@ function Contact() {
                     <ul className="contact-infos" style={{ color: "#1e1e1e" }}>
                         <li className="contact-details">
                             <i className="fa fa-phone"></i>
-                                  <span>  +212 (0) 6 54 17 35 53</span>
+                                  <span>  +254 (0) 7 25 01 19 63</span>
                         </li>
                         <li className="contact-details">
                             <i className="fa fa-envelope"></i>
-                            <span>  contact@ilyasstrh.tech</span>
+                            <span>  amonkibetsigei@gmail.com</span>
                                   
                         </li>
                         <li className="contact-details">
                             <i className="fa fa-map-marker"></i>
-                            <span>  Rabat, Morocco</span>
+                            <span>  Nairobi, Kenya</span>
                         </li>
                     </ul>
                 </div>
