@@ -8,17 +8,24 @@ function Experience() {
                 <h2>Experience</h2>
                 <ul className="timeline">
                     <li>
-                        <a target="_blank" href="#">Adria Business & Technology</a>
-                        <a href="#" className="float-right">Oct 2021 - Present</a>
+                        <a target="_blank" href="#">Kenya Revenue Authority</a>
+                        <a href="#" className="float-right">Feb 2025 - Present</a>
                         <p>
-                            DevOps Engineer
+                            Software Developer
                     </p>
                     </li>
                     <li>
                         <a href="#">Oracle</a>
                         <a href="#" className="float-right">Feb 2021 - Aug 2021</a>
                         <p>
-                            Research assistant, DevOps Engineer
+                            Graduate Trainee - Software Developer
+                    </p>
+                    </li>
+                     <li>
+                        <a target="_blank" href="#">Konza Technopolis Development Authority</a>
+                        <a href="#" className="float-right">Dec 2023 - Oct 2024</a>
+                        <p>
+                            Software Developer
                     </p>
                     </li>
                 </ul>

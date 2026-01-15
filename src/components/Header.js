@@ -31,7 +31,7 @@ export default function Header() {
         setNavVisibility(!isNavVisible);
     };
 
-    return (
+    return (           
         <header className="Header">
             <CSSTransition
                 in={!isSmallScreen || isNavVisible}

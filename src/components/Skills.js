@@ -2,8 +2,8 @@ import React from 'react';
 import '../App.css';
 
 function Skills() {
-    const technologiesOne = ["Java", "Python", "Javascript", "PHP", "NodeJS", "ReactJS", "Networking"];
-    const technologiesTwo = ["Spring Boot", "MongoDB", "MySQL", "Android", "UX/UI", "Bootstrap", "DevOps"];
+    const technologiesOne = ["Java", "Python", "Javascript", "Spring Boot", "Django", "ReactJS", "Oracle WebLogic"];
+    const technologiesTwo = ["Oracle", "SQL", "Firebase", "PostgreSQL", "UX/UI", "DevOps", "Cloud", "Linux"];
     return (
         <section id="skills" className="container">
             <div className="container">
