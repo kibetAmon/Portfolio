@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import { Link } from 'react-scroll'
 import Typed from "react-typed";
-import Particles from 'react-particles-js';
 
 
 
@@ -14,7 +13,7 @@ function Hero() {
                     <div className="card-header">
                         <div className="profile-img"></div>
                         <div className="header-description">
-                            <h1>Ilyass TARHRI</h1>
+                            <h1>Amon Kibet</h1>
                             <Typed className={"descriptionTyped"} strings={["Full Stack Web Developer", "Cloud and DevOps Enthusiast", "UI/UX Designer"]} typeSpeed={40} backSpeed={50}
                                 loop />
                             <div className="social-icons">
@@ -34,9 +33,9 @@ function Hero() {
                     <div className="card-body">
                         <h2 className="card-title">About me</h2>
                         <p className="card-text">
-                        Hello 👋🏼, I am Ilyass, Full-Stack Web Developer, based in Morocco, 
-                        I am passionate about Web Development, DevOps and Cloud. 
-                        I focus on modern, responsive website solutions that are easy to use by the end user. 
+                        Hello 👋🏼, I am Amon Kibet, Full-Stack Developer, based in Kenya, 
+                        I am passionate about software Development, DevOps and Cloud. 
+                        I focus on modern, responsive solutions that are easy to use by the end user. 
                         If you have an opportunity, feel free to contact me.
                              
                     </p>

@@ -9,7 +9,7 @@ import Header from './components/Header.js';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import ScrollToTop from './components/ScrollToTop';
-import Particles from 'react-particles-js';
+import Particles from 'react-tsparticles';
 import { ToastContainer, toast } from 'react-toastify';
 import Certifications from './components/Certifications';
 
@@ -25,7 +25,7 @@ function App() {
             position: 'absolute',
             opacity: "0.3",
           }}
-          params={{
+          options={{
             particles: {
               number: {
                 value: 45,
