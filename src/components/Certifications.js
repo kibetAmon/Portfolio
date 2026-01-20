@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import AwsCP from '../images/certifs/aws_cp.png'
 import gitlab from '../images/certifs/gitlab.png'
-import k8sgcp from '../images/certifs/k8s_gcp.png'
 import k8s from '../images/certifs/k8s.png'
 import AWSSAA from '../images/certifs/saa.png'
 

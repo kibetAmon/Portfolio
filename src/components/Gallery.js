@@ -50,30 +50,7 @@ function Gallery() {
             category: ['all', 'Android', 'Gradle', 'Firebase', 'Firestore', 'Git', 'UI/UX'],
             description: "A mobile application that facilitates making appointments and monitoring patients",
             link: 'https://github.com/ilyasstrh/Health_Care_App',
-        },
-        {
-            title: 'Online Store',
-            stack: "MongoDB/Express/ReactJS/NodeJS",
-            image: OnlineShop,
-            category: ['all', 'ReactJS', 'NodeJS', 'MongoDB', 'Express', 'Mongoose', 'UI/UX'],
-            description: "An online car rental and management platform",
-            link: 'https://github.com/ilyasstrh/OnlineStore',
-        },
-        {
-            title: 'Car rental management',
-            stack: "PHP/MySQL",
-            image: Locar,
-            category: ['all', 'PHP', 'Javascript', 'HTML', 'CSS', 'MySQL'],
-            description: "An online car rental and management platform",
-        },
-        {
-            title: 'IoT Smart City Prototype',
-            stack: "Arduino/ESP8266",
-            image: smartCity,
-            category: ['all','Javascript', 'HTML', 'CSS'],
-            description: "IoT Smart City Prototype",
-            link: SmartCityPDF,
-        },
+        }
     ];
 
     useEffect(() => {

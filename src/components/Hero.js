@@ -14,17 +14,17 @@ function Hero() {
                         <div className="profile-img"></div>
                         <div className="header-description">
                             <h1>Amon Kibet</h1>
-                            <Typed className={"descriptionTyped"} strings={["Full Stack Web Developer", "Cloud and DevOps Enthusiast", "UI/UX Designer"]} typeSpeed={40} backSpeed={50}
+                            <Typed className={"descriptionTyped"} strings={["Full Stack Developer", "Cloud and DevOps Engineer", "UI/UX Designer"]} typeSpeed={40} backSpeed={50}
                                 loop />
                             <div className="social-icons">
                                 <span>
                                     <a href="https://twitter.com/ilyass_trh" target="_"><i className="fa fa-twitter"></i></a>
                                 </span>
                                 <span>
-                                    <a href="https://github.com/ilyasstrh" target="_"><i className="fa fa-github"></i></a>
+                                    <a href="https://github.com/kibetAmon" target="_"><i className="fa fa-github"></i></a>
                                 </span>
                                 <span>
-                                    <a href="https://www.linkedin.com/in/ilyasstrh/" target="_"><i
+                                    <a href="https://www.linkedin.com/in/amon-kibet" target="_"><i
                                         className="fa fa-linkedin"></i></a>
                                 </span>
                             </div>
