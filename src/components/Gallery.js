@@ -7,7 +7,7 @@ import PFE from '../images/Portfolio/pfe.PNG'
 
 
 function Gallery() {
-    const [filter, setFilter] = useState('all');
+    const [filter] = useState('all');
     const [projects, setProjects] = useState([]);
     const [hover, setHover] = useState(false);
     // Removed unused 'tags' variable
@@ -64,36 +64,6 @@ function Gallery() {
 
     return (
         <div>
-            <div id="filter">
-                {/* Tags to filter projects */}
-                <button className="btn btn-project" onClick={() => setFilter('all')}>
-                    All
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('Javascript')}>
-                    Javascript
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('ReactJS')}>
-                    ReactJS
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('UI/UX')}>
-                    UI/UX
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('Java')}>
-                    Java
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('NodeJS')}>
-                    NodeJS
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('Firebase')}>
-                    Firebase
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('MongoDB')}>
-                    MongoDB
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('Spring boot')}>
-                    Spring boot
-                </button>
-            </div>
             <div className="image-grid">
                 {projects.map(item => item.filtered === true ? (
                     <div className="box" key={item.title} >

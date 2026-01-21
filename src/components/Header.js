@@ -4,6 +4,7 @@ import "../styles/Header.css";
 import { CSSTransition } from "react-transition-group";
 import { Link } from 'react-scroll'
 
+
 export default function Header() {
     const [isNavVisible, setNavVisibility] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
