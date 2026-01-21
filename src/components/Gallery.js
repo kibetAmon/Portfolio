@@ -3,7 +3,7 @@ import '../styles/Gallery.scss';
 import Healthcare from '../images/Portfolio/App_ui.png'
 import Food from '../images/Portfolio/food.jpg'
 import Portfolio from '../images/Portfolio/portfolio.PNG'
-import PFE from '../images/Portfolio/pfe.PNG'
+import reqsform1 from '../images/Portfolio/reqsform1.jpg'
 
 
 function Gallery() {
@@ -17,36 +17,12 @@ function Gallery() {
      */
     const portfolio = [
         {
-            title: "MIOLA PFE",
-            stack: "Full Stack Spring/ReactJS",
-            image: PFE,
-            category: ['all', 'Java EE', 'Spring boot', 'Spring Security', 'ReactJS', 'PostgreSQL', 'Git'],
-            description: "Une plateforme de faire le suivi, l'accompagnement et l'encadrement des etudiants pendant leurs stages de PFE.",
-            link: 'https://miolapfe.herokuapp.com ',
-        },
-        {
-            title: "React Portfolio",
-            stack: "ReactJS",
-            image: Portfolio,
-            category: ['all', 'ReactJS'],
-            description: "Une plateforme de faire le suivi, l'accompagnement et l'encadrement des etudiants pendant leurs stages de PFE.",
-            link: 'https://github.com/ilyasstrh/React_Portfolio',
-        },
-        {
-            title: 'Food delivery system',
-            stack: "JAVA Desktop",
-            image: Food,
-            category: ['all', 'Java', 'JavaFX', 'Maven', 'Git'],
-            description: "The main purpose of our application is to allow users to minimize travel time to restaurants and enjoy their home food in a short time by viewing the progress of their order, thus facilitating the task of order management for restaurants, thus offering an optimal path for deliveries, with several IoT-based functionalities.",
-            link: 'https://github.com/ilyasstrh/FOOD_SYSTEM',
-        },
-        {
-            title: 'Healthcare Mobile App',
-            stack: "Android",
-            image: Healthcare,
-            category: ['all', 'Android', 'Gradle', 'Firebase', 'Firestore', 'Git', 'UI/UX'],
-            description: "A mobile application that facilitates making appointments and monitoring patients",
-            link: 'https://github.com/ilyasstrh/Health_Care_App',
+            title: "KNDC Requirements form",
+            stack: "Fullstack Django",
+            image: reqsform1,
+            category: ['all', 'Django'],
+            description: "A web application to capture requirements from various institutions seeking Data Centre services from konza Technopolis.",
+            link: 'https://requirements.konza.go.ke/ ',
         }
     ];
 
@@ -69,29 +45,17 @@ function Gallery() {
                 <button className="btn btn-project" onClick={() => setFilter('all')}>
                     All
                 </button>
-                <button className="btn btn-project" onClick={() => setFilter('Javascript')}>
-                    Javascript
-                </button>
                 <button className="btn btn-project" onClick={() => setFilter('ReactJS')}>
                     ReactJS
                 </button>
-                <button className="btn btn-project" onClick={() => setFilter('UI/UX')}>
-                    UI/UX
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('Java')}>
-                    Java
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('NodeJS')}>
-                    NodeJS
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('Firebase')}>
-                    Firebase
-                </button>
-                <button className="btn btn-project" onClick={() => setFilter('MongoDB')}>
-                    MongoDB
+                <button className="btn btn-project" onClick={() => setFilter('Django')}>
+                    Django
                 </button>
                 <button className="btn btn-project" onClick={() => setFilter('Spring boot')}>
                     Spring boot
+                </button>
+                    <button className="btn btn-project" onClick={() => setFilter('.NET')}>
+                    .NET
                 </button>
             </div>
             <div className="image-grid">
