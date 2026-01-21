@@ -8,11 +8,11 @@ function Education() {
                 <h2>Education</h2>
                 <ul className="timeline">
                     <li>
-                        <a target="_blank" href="#">Moi University</a>
-                        <a href="#" className="float-right">2017 - 2022</a>
+                        <span className="timeline-company">Moi University</span>
+                        <span className="float-right">Aug 2017 - Dec 2022</span>
                         <p>
                             Bachelor's degree: Informatics
-                    </p>
+                        </p>
                     </li>
                 </ul>
             </div>

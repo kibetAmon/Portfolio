@@ -9,7 +9,7 @@ import Header from './components/Header.js';
 import Projects from './components/Projects';
 import ScrollToTop from './components/ScrollToTop';
 import Particles from 'react-tsparticles';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import Certifications from './components/Certifications';
 
 
