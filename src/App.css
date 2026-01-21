@@ -61,33 +61,6 @@ section h2 {
   display: none;
 }
 
-/*
-#navbar{
-  padding-right: 11%;
-}
-#navbar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-#navbar ul li {
-  padding: 0.8rem;
-}
-
-#navbar ul li a {
-  color: #fff;
-}
-
-#navbar ul li a:hover {
-  color: var(--primary-color);
-  cursor: pointer;
-}
-*/
-/* Navbar End */
-
-
-/* Hero section Start */
 
 #hero {
   height: 100vh;
@@ -239,6 +212,17 @@ ul.timeline>li:before {
   width: 20px;
   height: 20px;
   z-index: 400;
+}
+
+/* Experience section */
+
+.timeline-company {
+    color: var(--primary-color);
+    /* Add any other styles that were applied to the anchor tags */
+}
+
+.float-right {
+    color: var(--primary-color);
 }
 
 
@@ -468,33 +452,7 @@ span .fa {
     z-index: 1; 
   }
   
-  /*
-  #navbar{
-    padding: 0;
-    display: none;
-  }
-  
-  #navbar ul{
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    transform: translateY(0%);
-    transition: all 0.5s;
-  }
-  #navbar ul li:hover{
-    background-color: var(--primary-color);
-  }
-  #navbar ul li a{
-    text-transform: uppercase;
-    font-size: 1.2rem;
-  }
-  #navbar ul li:hover a{
-    color: var(--bg-color);
-}
-*/
+
   #hero {
       height: auto;
   }

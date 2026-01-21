@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Gallery.scss';
 import Healthcare from '../images/Portfolio/App_ui.png'
-import OnlineShop from '../images/Portfolio/onlineshop.jpg'
 import Food from '../images/Portfolio/food.jpg'
-import smartCity from '../images/Portfolio/smartCity.jpg'
 import Portfolio from '../images/Portfolio/portfolio.PNG'
 import PFE from '../images/Portfolio/pfe.PNG'
-import Locar from '../images/Portfolio/locar.PNG'
-import SmartCityPDF from '../files/SmartCity.pdf'
 
 
 function Gallery() {
     const [filter, setFilter] = useState('all');
     const [projects, setProjects] = useState([]);
     const [hover, setHover] = useState(false);
-    const tags = ['all', 'Javascript', "ReactJS", "UI/UX", "Java", "NodeJS", "Firebase", "MongoDB", "Spring boot"];
+    // Removed unused 'tags' variable
+    
     /**
      * Add portfolio project here
      */
@@ -55,57 +52,59 @@ function Gallery() {
 
     useEffect(() => {
         setProjects(portfolio);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
         setProjects([]);
         const filtered = portfolio.map(p => ({ ...p, filtered: p.category.includes(filter) }));
         setProjects(filtered);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [filter]);
 
     return (
         <div>
             <div id="filter">
                 {/* Tags to filter projects */}
-                <button className="btn btn-project">
-                    <a active={filter === 'all'} onClick={() => setFilter('all')}>All</a>
+                <button className="btn btn-project" onClick={() => setFilter('all')}>
+                    All
                 </button>
-                <button className="btn btn-project">
-                    <a active={filter === 'Javascript'} onClick={() => setFilter('Javascript')}>Javascript</a>
+                <button className="btn btn-project" onClick={() => setFilter('Javascript')}>
+                    Javascript
                 </button>
-                <button className="btn btn-project">
-                    <a active={filter === 'ReactJS'} onClick={() => setFilter('ReactJS')}>ReactJS</a>
+                <button className="btn btn-project" onClick={() => setFilter('ReactJS')}>
+                    ReactJS
                 </button>
-                <button className="btn btn-project">
-                    <a active={filter === 'UI/UX'} onClick={() => setFilter('UI/UX')}>UI/UX</a>
+                <button className="btn btn-project" onClick={() => setFilter('UI/UX')}>
+                    UI/UX
                 </button>
-                <button className="btn btn-project">
-                    <a active={filter === 'Java'} onClick={() => setFilter('Java')}>Java</a>
+                <button className="btn btn-project" onClick={() => setFilter('Java')}>
+                    Java
                 </button>
-                <button className="btn btn-project">
-                    <a active={filter === 'NodeJS'} onClick={() => setFilter('NodeJS')}>NodeJS</a>
+                <button className="btn btn-project" onClick={() => setFilter('NodeJS')}>
+                    NodeJS
                 </button>
-                <button className="btn btn-project">
-                    <a active={filter === 'Firebase'} onClick={() => setFilter('Firebase')}>Firebase</a>
+                <button className="btn btn-project" onClick={() => setFilter('Firebase')}>
+                    Firebase
                 </button>
-                <button className="btn btn-project">
-                    <a active={filter === 'MongoDB'} onClick={() => setFilter('MongoDB')}>MongoDB</a>
+                <button className="btn btn-project" onClick={() => setFilter('MongoDB')}>
+                    MongoDB
                 </button>
-                <button className="btn btn-project">
-                    <a active={filter === 'Spring boot'} onClick={() => setFilter('Spring boot')}>Spring boot</a>
+                <button className="btn btn-project" onClick={() => setFilter('Spring boot')}>
+                    Spring boot
                 </button>
             </div>
-            <div class="image-grid">
+            <div className="image-grid">
                 {projects.map(item => item.filtered === true ? (
                     <div className="box" key={item.title} >
                         <div className="grid-image">
-                            <img src={item.image} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} />
+                            <img src={item.image} alt={item.title} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} />
                         </div>
                         <div className={hover ? 'hidden' : 'display-content'}>
                             <h2>{item.title}</h2>
                             <p>{item.stack}</p>
                             <button className="btn hero-btn title">
-                                <a id="title" href={item.link} target="_blank">Learn more</a>
+                                <a id="title" href={item.link} target="_blank" rel="noreferrer">Learn more</a>
                             </button>
                         </div>
                     </div>
