@@ -33,13 +33,13 @@ function Hero() {
                     <div className="card-body">
                         <h2 className="card-title">About me</h2>
                         <p className="card-text">
-                        Hello 👋🏼, I am Amon Kibet, Full-Stack Developer, based in Kenya, 
+                        Hello 👋🏼, I am Amon Kibet, Full-Stack Developer, based in Kenya. 
                         I am passionate about software Development, DevOps and Cloud. 
                         I focus on modern, responsive solutions that are easy to use by the end user. 
                         If you have an opportunity, feel free to contact me.
                              
                     </p>
-                        <a href="https://drive.google.com/file/d/1t0OMlmOlYm_aJHREWc-71SO2KZp2Fu_9/view?usp=sharing" target="_blank" rel="noreferrer" id="download" className="btn  hero-btn">Download CV</a>
+                        <a href="https://drive.google.com/file/d/1wKXNh7g-0_cVGr-gUIWj0vk3505HkWrE/view?usp=sharing" target="_blank" rel="noreferrer" id="download" className="btn  hero-btn">Download CV</a>
                         <Link to="projects" spy={true} smooth={true} className="btn hero-btn">My Projects</Link>
                     </div>
                 </div>
