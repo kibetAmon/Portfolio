@@ -1,9 +1,9 @@
 import React from 'react';
 import '../App.css';
-import AwsCP from '../images/certifs/aws_cp.png'
-import gitlab from '../images/certifs/gitlab.png'
-import k8s from '../images/certifs/k8s.png'
-import AWSSAA from '../images/certifs/saa.png'
+import C4E from '../images/certifs/C4E.jpg'
+import LinuxDevOps from '../images/certifs/LinuxDevOps.png'
+import UxDesignLogo from '../images/certifs/UxDesignLogo.jpg'
+import Cybersec from '../images/certifs/Cybersec.jpg'
 
 function Certifications() {
 
@@ -12,28 +12,28 @@ function Certifications() {
     const certifications = [
        
         {
-            link: "https://www.credly.com/badges/97af293c-ecad-46b1-bf23-99f7d9446a0d/public_url",
-            certImgSrc: k8s,
-            certImgAlt: "Certified Kubernetes Administrator",
-            certImgTitle: "Certified Kubernetes Administrator"
+            link: "https://drive.google.com/file/d/1c54KdfYfaB5xlFCs7Q1eHsOU7Fd_dd5Y/view?usp=sharing",
+            certImgSrc: LinuxDevOps,
+            certImgAlt: "Introduction to shell scripting for DevOps",
+            certImgTitle: "Introduction to shell scripting for DevOps"
         },
         {
-            link: "https://www.credly.com/badges/24a9cc00-1aa9-46f9-ad1d-6a3b1168bcbb/public_url",
-            certImgSrc: AWSSAA,
-            certImgAlt: "AWS Certified Solutions Architect",
-            certImgTitle: "AWS Certified Solutions Architect"
+            link: "https://drive.google.com/file/d/18d4BLbYbSK-oMAE5eMdqghkKUEP_c8mm/view?usp=sharing",
+            certImgSrc: UxDesignLogo,
+            certImgAlt: "Foundations of User Experience (UX) Design",
+            certImgTitle: "Foundations of User Experience (UX) Design"
         },
         {
-            link: "https://www.credly.com/badges/4d602eaf-0e6b-48b9-a56d-f34b64fc13f9/public_url",
-            certImgSrc: AwsCP,
-            certImgAlt: "AWS Certified Cloud Practitioner",
-            certImgTitle: "AWS Certified Cloud Practitioner"
+            link: "https://drive.google.com/file/d/17wtAZeAAc-kScnZKy6ZT6ESROqyOWMm6/view?usp=sharing",
+            certImgSrc: Cybersec,
+            certImgAlt: "Cybersecurity Awareness",
+            certImgTitle: "Cybersecurity Awareness"
         },
         {
-            link: "https://gitlab.badgr.com/public/assertions/DJAdw2NqSEaCAro-fP1uWA",
-            certImgSrc: gitlab,
-            certImgAlt: "GitLab Certified Associate",
-            certImgTitle: "GitLab Certified Associate"
+            link: "https://drive.google.com/file/d/1La52X0l684sjALInh2KsZQpfeowNpjon/view?usp=sharing",
+            certImgSrc: C4E,
+            certImgAlt: "Coding for Employment Africa",
+            certImgTitle: "Coding for Employment Africa"
         }
     ]
 

@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Gallery.scss';
-import Healthcare from '../images/Portfolio/App_ui.png'
-import Food from '../images/Portfolio/food.jpg'
-import Portfolio from '../images/Portfolio/portfolio.PNG'
 import reqsform1 from '../images/Portfolio/reqsform1.jpg'
 
 
@@ -17,7 +14,7 @@ function Gallery() {
      */
     const portfolio = [
         {
-            title: "KNDC Requirements form",
+            title: "Konza National Data Centre Requirements form",
             stack: "Fullstack Django",
             image: reqsform1,
             category: ['all', 'Django'],
