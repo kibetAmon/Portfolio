@@ -13,24 +13,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Setup node 10
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - name: Setup Node 16
+        uses: actions/setup-node@v3
         with:
-            node-version: 10.x
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install # will run `yarn install` command
+            node-version: 16.x
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
       - name: Build production bundle
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: build # will run `yarn build` command
+        run: npm run build
         env:
             CI: false
             NODE_ENV: production
       - name: Upload Build Directory
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
             name: build
             path: build
@@ -40,7 +36,7 @@ jobs:
     needs: build
     steps:
         - name: Download Build Directory
-          uses: actions/download-artifact@v1
+          uses: actions/download-artifact@v3
           with:
               name: build
 
