@@ -10,22 +10,22 @@ export default function Header() {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia("(max-width: 700px)");
-        mediaQuery.addListener(handleMediaQueryChange);
+        const mediaQuery = window.matchMedia("(max-width: 768px)");
+        
+        const handleMediaQueryChange = (e) => {
+            setIsSmallScreen(e.matches);
+        };
+        
+        // Modern way - use addEventListener
+        mediaQuery.addEventListener('change', handleMediaQueryChange);
+        
+        // Set initial value
         handleMediaQueryChange(mediaQuery);
 
         return () => {
-            mediaQuery.removeListener(handleMediaQueryChange);
+            mediaQuery.removeEventListener('change', handleMediaQueryChange);
         };
     }, []);
-
-    const handleMediaQueryChange = mediaQuery => {
-        if (mediaQuery.matches) {
-            setIsSmallScreen(true);
-        } else {
-            setIsSmallScreen(false);
-        }
-    };
 
     const toggleNav = () => {
         setNavVisibility(!isNavVisible);
@@ -40,9 +40,9 @@ export default function Header() {
                 unmountOnExit
             >
                 <nav className="Nav">
-                    <Link to="projects" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Projects</Link>
-                    <Link to="certifications" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Certifications</Link>
-                    <Link to="blog" spy={true} smooth={true} onClick={toggleNav} class="menu-link">Blogs</Link>
+                    <Link to="projects" spy={true} smooth={true} onClick={toggleNav} className="menu-link">Projects</Link>
+                    <Link to="certifications" spy={true} smooth={true} onClick={toggleNav} className="menu-link">Certifications</Link>
+                    <Link to="blog" spy={true} smooth={true} onClick={toggleNav} className="menu-link">Blogs</Link>
                 </nav>
             </CSSTransition>
             <button onClick={toggleNav} className="Burger">

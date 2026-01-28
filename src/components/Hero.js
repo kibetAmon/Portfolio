@@ -30,7 +30,7 @@ function Hero() {
               <div className="social-icons">
                 <span>
                   <a
-                    href="https://twitter.com/ilyass_trh"
+                    href="https://x.com/_AmonKibet"
                     target="_blank"
                     rel="noreferrer"
                   >
