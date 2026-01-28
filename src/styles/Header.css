@@ -64,7 +64,7 @@
     border: none;
     background: none;
     outline: none;
-    color: #34feaa; /* Make burger button visible */
+    color: #34feaa;
     cursor: pointer;
     transition: 0.1s;
   }
@@ -88,7 +88,7 @@
       border-bottom-right-radius: 10px;
     }
     .Nav a {
-        color: #282c34; /* Make links visible on green background */
+        color: #282c34;
     }
     .Nav a:hover {
         color: #1e1e1e;

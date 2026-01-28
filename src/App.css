@@ -32,39 +32,11 @@ section h2 {
 }
 
 
-/* Navbar Start */
-
-#openMenu{
-  display: none;
-  float: right;
-  top: -0.8rem;
-  position: relative;
-  margin-right: 0.8rem;
-  font-size: 1.8rem;
-  z-index: 1; 
-}
-
-.header{
-  display: grid;
-  grid-template-areas: "logo nav";
-}
-
-#navbar{
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: repeat(8, auto);
-  align-items: center;
-  justify-items: center;
-}
-
-.burger{
-  display: none;
-}
-
+/* Hero Section */
 
 #hero {
   height: 100vh;
-  padding-top: 3.2rem;
+  padding-top: 90px;
 }
 
 #card,
@@ -127,7 +99,7 @@ section h2 {
 }
 
 
-/*Scrool down mouse*/
+/*Scroll down mouse*/
 
 .scroll-down {
   position: absolute;
@@ -237,7 +209,7 @@ span .fa {
 }
 
 
-/* Scroll to Rop */
+/* Scroll to Top */
 
 .scroll-top {
   position: fixed;
@@ -253,7 +225,7 @@ span .fa {
 }
 
 
-/* End Scroll to Rop */
+/* End Scroll to Top */
 
 
 /* Projects Start */
@@ -340,7 +312,7 @@ span .fa {
 /* Projects End */
 
 
-/* Conatct */
+/* Contact */
 
 #contact-me {
   /*background-color: var(--primary-color);*/
@@ -415,30 +387,32 @@ span .fa {
 /* End Footer */
 
 @media only screen and (max-width: 768px) {
-  #openMenu{
-    display: block;
-    float: right;
-    top: 0.6rem;
-    position: relative;
-    margin-right: 0.8rem;
-    font-size: 1.8rem;
-    z-index: 1; 
-  }
-  
-
   #hero {
       height: auto;
+      padding-top: 90px;
+      min-height: 100vh;
   }
+  
   .scroll-down {
       display: none;
   }
+  
   .contact {
       display: flex;
       flex-direction: column;
       align-items: center;
   }
+  
   .contact-details,
   .contact-form {
       width: 100%;
+  }
+  
+  #card .card-header {
+    flex-direction: column;
+  }
+  
+  .profile-img {
+    margin-bottom: 1rem;
   }
 }
