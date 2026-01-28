@@ -1,9 +1,10 @@
 import React from 'react';
 import '../App.css';
-import C4E from '../images/certifs/C4E.jpg'
+import microsoft from '../images/certifs/microsoft.png'
 import LinuxDevOps from '../images/certifs/LinuxDevOps.png'
 import UxDesignLogo from '../images/certifs/UxDesignLogo.jpg'
-import Cybersec from '../images/certifs/Cybersec.jpg'
+import cyberSecurity from '../images/certifs/cyberSecurity.jpg'
+import OracleCert2 from '../images/certifs/OracleCert2.png'
 
 function Certifications() {
 
@@ -25,15 +26,21 @@ function Certifications() {
         },
         {
             link: "https://drive.google.com/file/d/17wtAZeAAc-kScnZKy6ZT6ESROqyOWMm6/view?usp=sharing",
-            certImgSrc: Cybersec,
+            certImgSrc: cyberSecurity,
             certImgAlt: "Cybersecurity Awareness",
             certImgTitle: "Cybersecurity Awareness"
         },
         {
             link: "https://drive.google.com/file/d/1La52X0l684sjALInh2KsZQpfeowNpjon/view?usp=sharing",
-            certImgSrc: C4E,
+            certImgSrc: microsoft,
             certImgAlt: "Coding for Employment Africa",
             certImgTitle: "Coding for Employment Africa"
+        },
+        {
+            link: "https://drive.google.com/file/d/17lZdtNn9RDwBzafafi_Czy0z_BPyGWcR/view?usp=sharing",
+            certImgSrc: OracleCert2,
+            certImgAlt: "Oracle-PDTP training",
+            certImgTitle: "Oracle-PDTP training"
         }
     ]
 

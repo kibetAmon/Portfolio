@@ -36,20 +36,20 @@ function Hero() {
                   >
                     <i className="fa fa-twitter"></i>
                   </a>
-                </span>
+                </span>                                                       
 
                 <span>
                   <a
                     href="https://github.com/kibetAmon"
-                    target="_blank"
+                    target="_blank"                                                                                                                             
                     rel="noreferrer"
                   >
                     <i className="fa fa-github"></i>
-                  </a>
+                  </a>      
                 </span>
 
                 <span>
-                  <a
+                  <a                                                                                                                                                                                                                                                                                                                            
                     href="https://www.linkedin.com/in/amon-kibet"
                     target="_blank"
                     rel="noreferrer"
