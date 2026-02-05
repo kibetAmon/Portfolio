@@ -16,7 +16,7 @@ function Experience() {
                     </li>
                     <li>
                         <span className="timeline-company">Oracle</span>
-                        <span className="float-right">Feb 2021 - Aug 2021</span>
+                        <span className="float-right">Oct 2024 - Dec 2024</span>
                         <p>
                             Graduate Trainee - Software Developer
                         </p>
