@@ -72,7 +72,7 @@ function Hero() {
             </p>
 
             <a
-              href="https://drive.google.com/file/d/1wKXNh7g-0_cVGr-gUIWj0vk3505HkWrE/view?usp=sharing"
+              href="https://drive.google.com/file/d/1jQtxDG5YPIuUVFzkXyBv_zFURH2CKHwq/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               id="download"
