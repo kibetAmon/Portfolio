@@ -65,10 +65,8 @@ function Hero() {
             <h2 className="card-title">About me</h2>
 
             <p className="card-text">
-              Hello 👋🏼, I am Amon Kibet, Full-Stack Developer, based in Kenya. I am
-              passionate about software Development, DevOps and Cloud. I focus on
-              modern, responsive solutions that are easy to use by the end user.
-              If you have an opportunity, feel free to contact me.
+            Hey there 👋🏼, I'm Amon Kibet — a Full-Stack Software Engineer based in Kenya 🇰🇪. I architect scalable solutions across the entire stack, from sleek frontends to robust cloud infrastructure ☁️. My passion? Building modern, lightning-fast applications while orchestrating seamless CI/CD pipelines and cloud-native deployments 🚀. I thrive at the intersection of code, automation, and infrastructure — where DevOps meets innovation 💻⚡.
+            Got an exciting opportunity or challenge? Let's build something extraordinary together 🔥.
             </p>
 
             <a
